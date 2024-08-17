@@ -1,6 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
-import java.math.BigDecimal;
 
 public class Calculadora {
 
@@ -27,6 +26,22 @@ public class Calculadora {
         System.out.println("dentro do altera dois numeros");
         System.out.println("n1:" + n1);
         System.out.println("n2:" + n2);
+    }
+
+    public void somaArray(int[] numeros) {
+        int soma = 0;
+        for(int n : numeros) {
+            soma += n;
+        }
+        System.out.println("SOMA ARRAY: " + soma);
+    }
+
+    public void somaVarArgs(int... numeros) {
+        int soma = 0;
+        for(int n : numeros) {
+            soma += n;
+        }
+        System.out.println("SOMA VARARGs: " + soma);
     }
 
 }
