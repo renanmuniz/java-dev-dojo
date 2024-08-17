@@ -55,8 +55,58 @@ public class Aula05EstruturasCondicionais {
             System.out.println("nenhum");
         }
 
-        //Onde parei:
-//        https://www.youtube.com/watch?v=gU-qCpBC5jk&list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW&index=23
+        // operador ternario =  condicao ? caso verdadeiro : caso falso
+        System.out.println("OPERADOR TERNARIO:");
 
+        double salario = 6000;
+        System.out.println(salario > 5000 ? "Eu vou doar 500" : "Nao vou doar");
+        System.out.println(salario > 6500 ? "Eu vou doar 500" : "Nao vou doar");
+
+        //switch
+        int diaDaSemana = 5;
+
+        switch (diaDaSemana) {
+            case 1:
+                System.out.println("Domingo");
+                break;
+            case 2:
+                System.out.println("Segunda");
+                break;
+            case 3:
+                System.out.println("Terça");
+                break;
+            case 4:
+                System.out.println("Quarta");
+                break;
+            case 5:
+                System.out.println("Quinta");
+                break;
+            case 6:
+                System.out.println("Sexta");
+                break;
+            case 7:
+                System.out.println("Sabado");
+                break;
+            default:
+                System.out.println("inválido");
+                break;
+        }
+
+        switch (diaDaSemana) {
+            case 1:
+            case 7:
+                System.out.println("Final de semana");
+                break;
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                System.out.println("Dia de semana");
+                break;
+            default:
+                System.out.println("inválido");
+                break;
+        }
     }
 }
