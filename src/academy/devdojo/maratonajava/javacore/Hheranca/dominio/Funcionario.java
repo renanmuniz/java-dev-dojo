@@ -3,6 +3,10 @@ package academy.devdojo.maratonajava.javacore.Hheranca.dominio;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    public Funcionario(String nome) {
+        super(nome);
+    }
+
     public void imprime() {
         super.imprime(); //super faz referencia a classe pai da herança
         System.out.println("Metodo imprime da classe Funcionario:");
@@ -13,7 +17,7 @@ public class Funcionario extends Pessoa {
     }
 
     public void relatorioPagamento() {
-        System.out.println("Eu, " + this.nome + " recebi o salario de R$" + this.salario);
+        System.out.println("Eu, " + this.getNome() + " recebi o salario de R$" + this.salario);
     }
 
     public double getSalario() {

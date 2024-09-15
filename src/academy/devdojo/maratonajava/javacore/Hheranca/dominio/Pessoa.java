@@ -5,6 +5,15 @@ public class Pessoa {
     private String cpf;
     private Endereco endereco;
 
+    public Pessoa(String nome) {
+        this.nome = nome;
+    }
+
+    public Pessoa(String nome, String cpf) {
+        this(nome);
+        this.cpf = cpf;
+    }
+
     public void imprime() {
         System.out.println("Metodo imprime da classe Pessoa:");
         System.out.println(nome);
