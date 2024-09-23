@@ -1,6 +1,7 @@
 package academy.devdojo.maratonajava.javacore.Npolimorfismo.servico;
 
 import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Produto;
+import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Tomate;
 
 public class CalculadoraImposto {
 //    public static void calcularImpostoComputador(Computador computador) {
@@ -25,5 +26,9 @@ public class CalculadoraImposto {
         System.out.println("Relatorio de imposto");
         double imposto = produto.calcularImposto();
         System.out.println("IMPOSTO DO PRODUTO: " + produto.getNome() + " de: R$" + produto.getValor() + " é de: R$" + imposto);
+        if(produto instanceof Tomate) {
+            Tomate tomate = (Tomate) produto;
+            System.out.println("Validade: " + tomate.getValidade());
+        }
     }
 }
